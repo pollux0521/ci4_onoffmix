@@ -1,0 +1,450 @@
+CRITICAL - 2022-02-10 00:44:22 --> syntax error, unexpected '}', expecting ';' or ','
+#0 /var/www/html/ci4/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/html/ci4/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-10 00:44:33 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:44:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(10): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-10 00:44:58 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:44:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(10): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-10 00:47:13 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:47:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(10): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 00:49:42 --> Call to undefined function App\Controllers\mysql_connect()
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-02-10 00:50:07 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:50:07 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(11): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 00:50:36 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-02-10 00:51:15 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:51:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(11): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-10 00:54:51 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:54:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(11): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-10 00:54:52 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:54:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(11): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-10 00:54:53 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-02-10 00:54:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /var/www/html/ci4/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(11): CodeIgniter\Database\BaseConnection->query()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 00:56:28 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-10 00:58:16 --> Undefined variable: query
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 01:03:40 --> Array to string conversion
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 19:48:23 --> Invalid file: header.php
+#0 /var/www/html/ci4/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4/app/Controllers/Login.php(11): view()
+#3 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->index()
+#4 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-10 19:49:10 --> Invalid file: header.php
+#0 /var/www/html/ci4/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4/app/Controllers/Login.php(10): view()
+#3 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->index()
+#4 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-10 19:49:25 --> Undefined variable: meta_title
+#0 /var/www/html/ci4/app/Views/header1.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/View/View.php(210): include('/var/www/html/c...')
+#2 /var/www/html/ci4/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/ci4/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/html/ci4/app/Controllers/Login.php(10): view()
+#5 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->index()
+#6 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-10 20:04:53 --> Undefined variable: conndb
+#0 /var/www/html/ci4/app/Controllers/Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#2 /var/www/html/ci4/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:06:13 --> Undefined variable: conndb
+#0 /var/www/html/ci4/app/Controllers/Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#2 /var/www/html/ci4/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:07:48 --> Undefined variable: conndb
+#0 /var/www/html/ci4/app/Controllers/Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#2 /var/www/html/ci4/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:13:11 --> Cannot call constructor
+#0 /var/www/html/ci4/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#1 /var/www/html/ci4/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-10 20:14:31 --> Class 'App\Controllers\CI_Controller' not found
+#0 /var/www/html/ci4/system/Router/Router.php(518): include_once()
+#1 /var/www/html/ci4/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#2 /var/www/html/ci4/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#3 /var/www/html/ci4/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 20:14:42 --> Undefined variable: conndb
+#0 /var/www/html/ci4/app/Controllers/Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(802): App\Controllers\Login->__construct()
+#2 /var/www/html/ci4/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:32:26 --> Trying to get property 'email' of non-object
+#0 /var/www/html/ci4/app/Controllers/Login.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->loginForm()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:33:45 --> Undefined offset: 0
+#0 /var/www/html/ci4/app/Controllers/Login.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->loginForm()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:37:28 --> Object of class stdClass could not be converted to string
+#0 /var/www/html/ci4/app/Controllers/Login.php(25): implode()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->loginForm()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 20:38:20 --> Object of class stdClass could not be converted to string
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->loginForm()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-10 20:38:55 --> implode(): Invalid arguments passed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/app/Controllers/Login.php(26): implode()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->loginForm()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 20:39:45 --> Object of class stdClass could not be converted to string
+#0 /var/www/html/ci4/app/Controllers/Login.php(26): implode()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\Login->loginForm()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 21:48:02 --> Undefined property: App\Controllers\TestDB::$db
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 21:49:13 --> Undefined property: App\Controllers\TestDB::$db
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 21:49:21 --> Undefined variable: db
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 21:49:24 --> Undefined variable: db
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 21:52:11 --> Undefined variable: db
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 21:52:12 --> Undefined variable: db
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 22:43:03 --> Undefined variable: builder
+#0 /var/www/html/ci4/app/Models/userModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(12): App\Models\userModel->login()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 22:43:11 --> Undefined variable: builder
+#0 /var/www/html/ci4/app/Models/userModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(12): App\Models\userModel->login()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 22:43:14 --> Undefined variable: builder
+#0 /var/www/html/ci4/app/Models/userModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(12): App\Models\userModel->login()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 22:49:16 --> Call to a member function findAll() on array
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(12): App\Models\userModel->login()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 22:49:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::findAll()
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(12): App\Models\userModel->login()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 22:50:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::findAll()
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(12): App\Models\userModel->login()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 22:55:08 --> Call to a member function findAll() on string
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-10 22:55:27 --> Array to string conversion
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 22:55:51 --> Call to undefined function App\Controllers\imnplode()
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-10 22:55:57 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/app/Controllers/TestDB.php(13): implode()
+#2 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#3 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 22:58:40 --> Array to string conversion
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:03:30 --> Undefined variable: users
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:03:31 --> Undefined variable: users
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:03:42 --> Undefined index: email
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:13:50 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:13:59 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:14:11 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:14:22 --> Undefined variable: username
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:14:32 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:14:42 --> Undefined offset: 0
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:14:46 --> Undefined offset: 1
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:15:54 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:16:36 --> Function name must be a string
+#0 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#1 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-10 23:16:42 --> Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP)
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-10 23:17:03 --> Undefined offset: 0
+#0 /var/www/html/ci4/app/Controllers/TestDB.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4/system/CodeIgniter.php(825): App\Controllers\TestDB->index()
+#2 /var/www/html/ci4/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
