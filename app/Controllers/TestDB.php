@@ -2,24 +2,14 @@
 
 namespace App\Controllers;
 
-use App\Models\userModel;
+use App\Models\timeTest;
 class TestDB extends BaseController
 {
-
     public function index()
     {
-        $std = new userModel();
-        
-        $result = $std->where(['email' => 'test1@test.com', 'pw' => 'test'])->findAll();
-        if($result){
-            foreach($result as $row){
-                print_r($row);
-                echo $row['username'];
-            }
-        }
-        else{
-            echo "NULL";
-        }
-        
+        $testDB = new timeTest();
+        $value = $testDB->where('t1 >', date('y/m/d h:i'))->findAll();
+        echo date('y/m/d h:i');
+        echo var_dump($value[0]["t1"]);
     }
 }

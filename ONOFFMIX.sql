@@ -47,7 +47,12 @@ CREATE TABLE MTGroup(
     endAccessTime DATETIME NOT NULL,
     startMTTime DATETIME NOT NULL,
     endMTTime DATETIME NOT NULL,
+    approvalType boolean NOT NULL,
+    mtName varchar(64),
     FOREIGN KEY(_mid) REFERENCES MT(_mid)
     ON DELETE CASCADE
-    on UPDATE CASCADE
+    on UPDATE CASCADE,
+    FOREIGN KEY(mtName) REFERENCES MT(mtName)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 );

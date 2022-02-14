@@ -2,10 +2,11 @@
 <html>
     <head>
         <title><?= $meta_title?></title>
+        <link rel="stylesheet" type="text/css" href="/public/css/main.css">
     </head>
     <body>
         <div class="header1">
-            <?php if($is_login):?>
+            <?php if(isset($is_login)):?>
             <div class="header1-item"><?= $username ?> 님</div>
             <div class="header1-item"><a href="/Home/SignOut">로그아웃</a></div>
             <?php else:?>

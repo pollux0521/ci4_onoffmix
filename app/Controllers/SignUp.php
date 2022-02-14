@@ -2,12 +2,18 @@
 
 namespace App\Controllers;
 use App\Models\userModel;
+use App\Models\MTModel;
+use App\Models\MTGroupModel;
 
 class SignUp extends BaseController
 {
     // [ GET ]
     public function index()
     {
+        $mtModel = new MTModel();
+        $mtGroupModel = new MTGroupModel();
+
+        $mtGroupModel->where('endMTTime >', );
         helper(['form']);
         $data = ['meta_title' => 'Sign Up'];
         echo view('header1', $data);
