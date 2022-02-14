@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class tt extends BaseController{
+class Tt extends BaseController{
     public function index(){
         echo "hi";
     }

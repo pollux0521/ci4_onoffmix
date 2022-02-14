@@ -31,4 +31,22 @@ class Home extends BaseController
         $session->destroy();
         return $this->response->redirect('/');
     }
+    
+    public function event($mtName){
+        $mtModel = new MTModel;
+        $mtGroupModel = new MTGroupModel;
+        $mt = $mtModel->where("mtName", $mtName)->findAll();
+        $mtGroupList = $mtGroupModel->where("mtName", $mtName)->findAll();
+        
+        $data = [
+            'meta_title'    => 'mtpage',
+            'mt'            => $mt[0],
+            'mtGroupList'   => $mtGroupList
+        ];
+
+        echo view("header1", $data);
+        echo view("header2");
+        echo view("mtPage");
+        echo view("footer");
+    }
 }
