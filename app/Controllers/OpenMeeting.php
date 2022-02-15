@@ -10,7 +10,11 @@ class OpenMeeting extends BaseController
         helper(['form']);
         $session = session();
         if($session->get('is_login')){
-            $data = ['meta_title' => 'openMeeting'];
+            $data = [
+                'is_login'  => $session->get('is_login'),
+                'username'  => $session->get('username'),
+                'meta_title' => 'openMeeting'
+            ];
             echo view('header1', $data);
             echo view('header2');
             echo view('openMeeting');
@@ -74,6 +78,8 @@ class OpenMeeting extends BaseController
                 }
             }else{
                 $data = [
+                    'is_login'  => $session->get('is_login'),
+                    'username'  => $session->get('username'),
                     'meta_title' => 'openMeeting',
                     'validation' => $this->validator
                 ];
@@ -84,6 +90,8 @@ class OpenMeeting extends BaseController
             }
         }else{
             $data = [
+                'is_login'  => $session->get('is_login'),
+                'username'  => $session->get('username'),
                 'meta_title' => 'openMeeting',
                 'validation' => $this->validator
             ];

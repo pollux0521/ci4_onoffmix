@@ -11,7 +11,7 @@
             <div class="header1-item"><a href="/Home/SignOut">로그아웃</a></div>
             <?php else:?>
             <div class="header1-item"><a href="/SignIn">로그인</a></div>
-            <div class="header1-item"><a href="/SignIn">회원가입</a></div>
+            <div class="header1-item"><a href="/SignUp">회원가입</a></div>
             <?php endif;?>
             <div class="header1-item"><a href="#">서비스안내</a></div>
             <div class="header1-item"><a href="#">고객센터</a></div>

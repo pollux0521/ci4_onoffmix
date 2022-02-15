@@ -8,7 +8,12 @@ class SignIn extends BaseController
     // [ GET ]
     public function index()
     {
-        $data = ['meta_title' => 'login'];
+        $session = session();
+        $data = [
+            'is_login'  => $session->get('is_login'),
+            'username'  => $session->get('username'),
+            'meta_title' => 'login'
+        ];
         echo view('header1', $data);
         echo view('Sign/signIn');
         echo view('footer');

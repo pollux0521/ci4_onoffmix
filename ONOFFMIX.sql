@@ -10,7 +10,7 @@ CREATE TABLE requestMT(
     _mid int(11),
     _gid int(11),
     _id int(11),
-    reson varchar(300) NOT NULL,
+    reason varchar(300) NOT NULL,
     Approval boolean default 0,
     FOREIGN KEY(_mid) REFERENCES MT(_mid) 
     ON DELETE CASCADE 

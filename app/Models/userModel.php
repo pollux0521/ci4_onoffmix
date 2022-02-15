@@ -7,7 +7,7 @@ class userModel extends Model{
     protected $primaryKey = '_id';  // 고유식별키
     protected $useAutoIncrement = true; 
     protected $returntype = 'array';  //
-    protected $allowedFields = ['username', 'email', 'pw'];
+    protected $allowedFields = ['_id','username', 'email', 'pw'];
 
 
 }

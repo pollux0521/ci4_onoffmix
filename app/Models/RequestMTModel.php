@@ -8,6 +8,6 @@ class requestMTModel extends Model{
     protected $primaryKey = '_rid';  // 고유식별키
     protected $useAutoIncrement = true; 
     protected $returntype = 'array';  //
-    protected $allowedFields = ['_rid','_mid','_gid','id','reason','Approval'];
+    protected $allowedFields = ['_rid','_mid','_gid','_id','reason','Approval'];
 
 }
