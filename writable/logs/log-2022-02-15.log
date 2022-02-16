@@ -314,3 +314,16 @@ CRITICAL - 2022-02-15 17:21:57 --> Undefined index: approvalType
 #3 /var/www/html/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
 #4 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-02-15 17:31:43 --> Too few arguments to function App\Controllers\Manage::groupinfo(), 0 passed in /var/www/html/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /var/www/html/system/CodeIgniter.php(825): App\Controllers\Manage->groupinfo()
+#1 /var/www/html/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-15 17:34:34 --> Undefined index: accessHead
+#0 /var/www/html/app/Controllers/Manage.php(179): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/system/CodeIgniter.php(825): App\Controllers\Manage->reviseGroup()
+#2 /var/www/html/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

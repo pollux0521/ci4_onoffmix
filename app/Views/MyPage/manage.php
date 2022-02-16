@@ -8,6 +8,9 @@
             <button type="button" onclick="location.href='/MyPage/revise/<?=$mt['mtName']?>/'">
             수정하기
             </button>
+            <button type="button" onclick="location.href='/Manage/addGroup/<?=$mt['_mid']?>/'">
+            그룹 추가하기
+            </button>
         </div>
     </div>
 

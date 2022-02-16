@@ -10,7 +10,7 @@
     </div>
     <div class="mt-box">
         <div> 개설모임</div>
-        <div >
+
             <?php foreach($mts as $mt):?>
                 <div class="mt-item">
                     <div class="mt-name">모임이름 : <?=$mt['mtName']?></div>
@@ -22,9 +22,9 @@
                     </div>
                 </div>
             <?php endforeach;?>
-        </div>
     </div>
     <div class="request-box">
+        <div>신청모임</div>
         <?php foreach($requests as $request):?>
             <div class="request-item">
                 <div class="mt-group-name">
@@ -44,7 +44,7 @@
                 </div>
                 
                 <div class="cancle-mt">
-                    <button type="button" onclick="location.href='/MyPage/cancle/<?=$mt['mtName']?>/'">
+                    <button type="button" onclick="location.href='/MyPage/cancel/<?=$request['_rid']?>/'">
                     취소하기
                     </button>
                 </div>

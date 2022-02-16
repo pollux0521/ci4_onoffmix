@@ -11,7 +11,7 @@ class TestDB extends BaseController
         return view('index');
     }
     public function test(){
-        $result = isset($_POST['approvalType']);
+        $result = $_POST['sign_time'];
         echo var_dump($result);
     }
 }

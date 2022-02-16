@@ -10,6 +10,7 @@
   <form action="/Manage/reviseGroup/<?=$group['_gid']?>" method="post">
       <div class="group" name="">
             <div class="groupname">
+                
                 그룹이름 : <?=$group['groupname']?><br>
                 변경할 그룹이름<input type="text" class="groupname" name="groupname" maxlength="64"/><br>
             </div>

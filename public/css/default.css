@@ -1,0 +1,54 @@
+.header1{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.header1-item{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.request-box{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.request-item{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.mt-box{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.mt-item{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.userinfo{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.group-box{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+.group-item{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px; 
+}

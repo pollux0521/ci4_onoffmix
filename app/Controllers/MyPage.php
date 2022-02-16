@@ -18,7 +18,7 @@ class MyPage extends BaseController
             $user = (new userModel())->where('_id',$session->get('_id'))->findAll();
             $requestMT = new RequestMTModel();
             $mts = $mt->where('_id', $session->get('_id'))->findAll();
-            $requests = $requestMT->select('requestMT.reason, requestMT.Approval, MTGroup.mtName, MTGroup.groupname, MTGroup.startMTTime, MTGroup.endMTTime')
+            $requests = $requestMT->select('requestMT._rid, requestMT.reason, requestMT.Approval, MTGroup.mtName, MTGroup.groupname, MTGroup.startMTTime, MTGroup.endMTTime')
             ->join('MTGroup', 'requestMT._gid = MTGroup._gid', 'inner')
             ->where('_id', $session->get('_id'))
             ->findAll();
@@ -158,4 +158,21 @@ class MyPage extends BaseController
             return $this->response->redirect('/SignIn');
         }
     }
+    // [ POST ]
+    public function cancel($rid){
+        $session = session();
+        if($session->get('is_login')){
+            $requestMT = (new RequestMTModel())->where('_rid', $rid)->where('_id', $session->get('_id'));
+            if($requestMT->delete()){
+                return $this->response->redirect('/MyPage');
+            }
+            else{
+                echo "알수없는오류";
+            }
+        }
+        else{
+            return $this->response->redirect('/SignIn');
+        }
+    }
+    
 }

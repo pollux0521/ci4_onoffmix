@@ -161,20 +161,31 @@ class Manage extends BaseController
                 if(strlen($_POST['groupname']))
                     $reviseGroup->set('groupname', $_POST['groupname']);
 
-                if(strlen($_POST['']))
-                    $reviseGroup->set('', $_POST['']);
-                    $reviseGroup->set('', $_POST['']);
+                if(strlen($_POST['sign_time'])){
+                    $accessTime = explode("-", $_POST['sign_time']);
+                    $reviseGroup->set('startAccessTime', date('y/m/d H:i', strtotime($accessTime[0])));
+                    $reviseGroup->set('endAccessTime', date('y/m/d H:i', strtotime($accessTime[1])));
+                }
 
-                if(strlen($_POST[''])){
-                    $reviseGroup->set('', $_POST['']);
-                    $reviseGroup->set('', $_POST['']);
+                if(strlen($_POST['meeting_time'])){
+                    $MTTime = explode("-", $_POST['meeting_time']);
+                    $reviseGroup->set('startMTTime', date('y/m/d H:i', strtotime($MTTime[0])));
+                    $reviseGroup->set('endMTTime', date('y/m/d H:i', strtotime($MTTime[1])));
                 }    
 
                 if(isset($_POST['approvalType']))
                     $reviseGroup->set('approvalType', $_POST['approvalType']);
 
-                if(strlen($_POST['accessHead']))
-                    $reviseGroup->set('accessHead', $_POST['accessHead']);
+                if(strlen($_POST['limitHead']))
+                    $reviseGroup->set('limitHead', $_POST['limitHead']);
+                
+                $reviseGroup->where('_gid', $gid);
+                if($reviseGroup->update()){
+                    return $this->response->redirect('/Manage/group/'.$gid);
+                }
+                else{
+                    echo "알수없는오류";
+                }
                 
             }
             else{
@@ -208,4 +219,84 @@ class Manage extends BaseController
         }
     }
 
+    // [ GET ]
+    public function addGroup($mid){
+        $mt = (new MTModel())->where('_mid',$mid)->first();
+        $session = session();
+        if($session->get('is_login')){
+            if($session->get('_id') == $mt['_id']){
+                
+                $data = [
+                    'mt'            => $mt,
+                    'is_login'      => $session->get('is_login'),
+                    'username'      => $session->get('username'),
+                    'meta_title'    => 'groupInfo'
+                ];
+                echo view('header1', $data);
+                echo view('header2');
+                echo view('/MyPage/addGroup');
+                echo view('footer');
+            }
+            else{
+                echo "잘못된 접근, 관리자가 아님.";
+            }
+        }
+        else{
+            return $this->response->redirect('/SignIn');
+        }
+    }
+    public function addGroupInfo($mid)
+    {
+        helper(['form']);
+        $rule = [
+            'groupname'         => 'required',
+            'sign_time'         => 'required',
+            'meeting_time'      => 'required',
+            'limitHead'         => 'required',
+        ];;
+        $mt = (new MTModel())->where('_mid',$mid)->first();
+        $session = session();
+        if($this->validate($rule)){
+            if($session->get('is_login')){
+                if($session->get('_id') == $mt['_id']){
+                    $accessTime = explode("-", $_POST['sign_time']);
+                    $MTTime = explode("-", $_POST['meeting_time']);
+                    $mtGroupData = [
+                        '_mid'              => $mid,
+                        'groupname'         => $_POST['groupname'],
+                        'limitHead'         => $_POST['limitHead'],
+                        'startAccessTime'   => date('y/m/d H:i', strtotime($accessTime[0])),
+                        'endAccessTime'     => date('y/m/d H:i', strtotime($accessTime[1])),
+                        'startMTTime'       => date('y/m/d H:i', strtotime($MTTime[0])),
+                        'endMTTime'         => date('y/m/d H:i', strtotime($MTTime[1])),
+                        'approvalType'      => $_POST["approvalType"],
+                        'mtName'            => $mt['mtName']
+                    ];
+                    $group = (new MTGroupModel())->save($mtGroupData);
+                    if($group == 1){
+                        return $this->response->redirect('/Manage/mgOf/'.$mt['mtName']);
+                    }
+                }
+                else{
+                    echo "잘못된 접근, 관리자가 아님.";
+                }
+            }
+            else{
+                return $this->response->redirect('/SignIn');
+            }
+        }
+        else{
+            $data = [
+                'is_login'  => $session->get('is_login'),
+                'username'  => $session->get('username'),
+                'meta_title' => 'addGroup',
+                'validation' => $this->validator
+            ];
+
+            echo view('header1', $data);
+            echo view('openMeeting');
+            echo view('footer');
+        }
+    
+    }
 }

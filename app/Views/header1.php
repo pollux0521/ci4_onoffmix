@@ -2,7 +2,7 @@
 <html>
     <head>
         <title><?= $meta_title?></title>
-        <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/default.css">
     </head>
     <body>
         <div class="header1">
