@@ -8,6 +8,6 @@ class MTGroupModel extends Model{
     protected $primaryKey = '_gid';  // 고유식별키
     protected $useAutoIncrement = true; 
     protected $returntype = 'array';  //
-    protected $allowedFields = ['_mid','groupname','limitHead','startAccessTime','endAccessTime','startMTTime','endMTTime','approvalType', 'mtName'];
+    protected $allowedFields = ['_mid','groupname','limitHead','accessHead','startAccessTime','endAccessTime','startMTTime','endMTTime','approvalType', 'mtName'];
 
 }

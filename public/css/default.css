@@ -1,4 +1,22 @@
-.header1{
+div{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.header2{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.first{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.second{
     border: 1px solid black;
     display:flex;
     flex-direction: row;

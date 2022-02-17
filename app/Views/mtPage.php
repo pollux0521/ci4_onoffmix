@@ -9,6 +9,9 @@
             <div class="approvalType"><?= $mtGroup["approvalType"] ? "선착순" : "개발자승인"?></div>
             <div class="limitHead"><?= $mtGroup["limitHead"]?></div>
             <div class="accessTime"><?= $mtGroup["startAccessTime"]?> ~ <?= $mtGroup["endAccessTime"]?></div>
+            <button type="button" onclick="location.href='/MTPage/request/<?=$mtGroup['_gid']?>'">
+            신청하기
+            </button>
         </div> 
     <?php endforeach; ?>
 </div>

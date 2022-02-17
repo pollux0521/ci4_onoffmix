@@ -15,13 +15,12 @@ class OpenMeeting extends BaseController
                 'username'  => $session->get('username'),
                 'meta_title' => 'openMeeting'
             ];
-            echo view('header1', $data);
-            echo view('header2');
+            echo view('header', $data);
             echo view('openMeeting');
             echo view('footer');
         }
         else{
-            return $this->response->redirect('/SignIn');
+            return $this->response->redirect('/sign/SignIn');
         }
     }
     public function open()
@@ -71,7 +70,7 @@ class OpenMeeting extends BaseController
                     $result = $mtGroup->save($mtGroupData);
                 }
                 if($result == 1){
-                    return $this->response->redirect('/');
+                    echo "<script>alert('모임이 생성되었습니다.'); window.location.href='/';</script>";
                 }
                 else{
                     return $this->response->redirect('/OpenMeeting');
@@ -84,7 +83,7 @@ class OpenMeeting extends BaseController
                     'validation' => $this->validator
                 ];
 
-                echo view('header1', $data);
+                echo view('header', $data);
                 echo view('openMeeting');
                 echo view('footer');
             }
@@ -95,7 +94,7 @@ class OpenMeeting extends BaseController
                 'meta_title' => 'openMeeting',
                 'validation' => $this->validator
             ];
-            echo view('header1', $data);
+            echo view('header', $data);
             echo view('openMeeting');
             echo view('footer');
         }

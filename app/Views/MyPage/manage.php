@@ -5,10 +5,10 @@
             <div class="registTime">등록일 : <?=$mt['registTime']?></div>
             <div class="viewCount">조회수 : <?=$mt['viewCount']?></div>
             <div class="requestCount">총 신청수 : <?=$mt['requestCount']?></div>
-            <button type="button" onclick="location.href='/MyPage/revise/<?=$mt['mtName']?>/'">
+            <button type="button" onclick="location.href='/manage/mt/reviseMT/<?=$mt['mtName']?>/'">
             수정하기
             </button>
-            <button type="button" onclick="location.href='/Manage/addGroup/<?=$mt['_mid']?>/'">
+            <button type="button" onclick="location.href='/manage/mt/addGroup/<?=$mt['_mid']?>/'">
             그룹 추가하기
             </button>
         </div>

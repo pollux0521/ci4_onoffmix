@@ -6,11 +6,11 @@
 <?php if(isset($validation)):?>
   <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
 <?php endif;?>
-<div class="openMeeting">
+<div class="manage-group">
   <div class="mt-info">
     <div class="mt-name">모임이름 : <?=$mt['mtName']?></div>
   </div>
-  <form action="/Manage/addGroupInfo/<?=$mt['_mid']?>" method="post">
+  <form action="/manage/mt/addGroupInfo/<?=$mt['_mid']?>" method="post">
       <div class="group" name=>
         그룹이름<input type="text" class="groupname" name="groupname" maxlength="64"/><br>
         신청기간<input type="text" class="datetimes" name="sign_time" value="Date"/><br>

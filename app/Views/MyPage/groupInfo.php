@@ -7,7 +7,7 @@
   <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
 <?php endif;?>
 <div class="revise-group-info">
-  <form action="/Manage/reviseGroup/<?=$group['_gid']?>" method="post">
+  <form action="/manage/group/reviseGroup/<?=$group['_gid']?>" method="post">
       <div class="group" name="">
             <div class="groupname">
                 

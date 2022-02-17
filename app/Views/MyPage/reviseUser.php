@@ -1,11 +1,11 @@
 <div class="reviseUser">
     
     <div class="changePW">    
-        <button type="button" onclick="location.href='/MyPage/changePW/'">
+        <button type="button" onclick="location.href='/manage/changePW/'">
         비밀번호 변경하러 가기
         </button>        
     </div>
-    <form action="/MyPage/reviseRequest" method="post"> 
+    <form action="/manage/reviseRequest" method="post"> 
         <div class="username">
             현재이름 : <?= $user['username']?><br>
             변경이름 : <input type="text" name="username"></input>

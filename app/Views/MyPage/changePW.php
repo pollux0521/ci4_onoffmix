@@ -1,5 +1,5 @@
 <div>
-    <form action="/MyPage/changePWRequest" method="post">
+    <form action="/mypage/changePWRequest" method="post">
         <div class="current-password">
             현재 비밀번호     | <input type="password" name="currentPW"></input>
         </div>

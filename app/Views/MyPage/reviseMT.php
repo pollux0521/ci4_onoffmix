@@ -1,6 +1,6 @@
 <!-- 모임 내용 제작해야함-->
 <div class="manage-mt">
-    <form action="/Manage/revise/<?=$mt['mtName']?>" method="post">
+    <form action="/manage/mt/revise/<?=$mt['mtName']?>" method="post">
         <div class="mt-box">
             <div class="mt-item">
                 <div class="mtName">

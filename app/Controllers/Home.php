@@ -20,8 +20,7 @@ class Home extends BaseController
             'MTList'    => $MTList
         ];
         
-        echo view("header1", $data);
-        echo view("header2");
+        echo view("header", $data);
         echo view("home");
         echo view("footer");
     }

@@ -3,7 +3,7 @@
         <div> 닉네임 : <?=$user[0]['username']?></div>
         <div> 이메일 : <?=$user[0]['email']?></div>
         <div>
-            <button type="button" onclick="location.href='/MyPage/reviseUser/'">
+            <button type="button" onclick="location.href='/mypage/reviseUser/'">
             관리하기
             </button>
         </div>
@@ -16,7 +16,7 @@
                     <div class="mt-name">모임이름 : <?=$mt['mtName']?></div>
                     <div class="mt-requestCount">신청인원 : <?=$mt['requestCount']?></div>
                     <div class="manage-mt">
-                        <button type="button" onclick="location.href='/Manage/mgOf/<?=$mt['mtName']?>'">
+                        <button type="button" onclick="location.href='/manage/mt/<?=$mt['mtName']?>'">
                         관리하기
                         </button>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
                 
                 <div class="cancle-mt">
-                    <button type="button" onclick="location.href='/MyPage/cancel/<?=$request['_rid']?>/'">
+                    <button type="button" onclick="location.href='/mypage/cancel/<?=$request['_rid']?>/'">
                     취소하기
                     </button>
                 </div>
