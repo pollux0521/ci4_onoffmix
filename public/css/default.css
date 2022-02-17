@@ -4,6 +4,12 @@ div{
     flex-direction: row;
     padding: 5px;
 }
+.group{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
 .header2{
     border: 1px solid black;
     display:flex;

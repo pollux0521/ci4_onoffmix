@@ -35,6 +35,6 @@
                 변경할 정원<input type="number" name="limitHead"><br>
             </div>
         </div>
-    <button type="submit" class="openMT">모임개설</button>
+    <button type="submit" class="openMT">변경하기</button>
   </form>
 </div>

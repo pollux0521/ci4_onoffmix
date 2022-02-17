@@ -49,7 +49,6 @@ class MyPage extends BaseController
             $requestMT = new RequestMTModel();
             $requestInfo = $requestMT->where('_rid', $rid)->where('_id', $session->get('_id'))->first();
             $requestMT->where('_rid', $rid)->where('_id', $session->get('_id'));
-            echo var_dump($requestInfo);
             if($requestMT->delete()){
                 $mt = new MTModel();
                 $group = new MTGroupModel();
